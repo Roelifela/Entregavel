@@ -5,7 +5,6 @@ public class ProfessorTitular extends Professor {
     private String especialidade;
 
 
-
     public ProfessorTitular(String nomeProfessor, String sobreNomeProfessor, Integer tempoCasa, Integer codigoProfessor, String especialidade) {
         super(nomeProfessor, sobreNomeProfessor, tempoCasa, codigoProfessor);
         this.especialidade = especialidade;
@@ -16,13 +15,16 @@ public class ProfessorTitular extends Professor {
     }
 
     public void setEspecialidade(String especialidade) {
+
         this.especialidade = especialidade;
     }
 
     @Override
     public String toString() {
         return "ProfessorTitular{" +
-                "especialidade='" + especialidade + '\'' +
+                "nome= " + getNomeProfessor() + '\'' +
+                "Sobrenome= " + getSobreNomeProfessor() + '\'' +
+                "Codigo= " + getCodigoProfessor() + '\'' +
                 '}';
     }
 }
